@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.whitworth.app.Run$PlaceholderFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Running Route"
+        android:textSize="48dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_pause_run"
+        android:id="@+id/btnPauseRun"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:textSize="48dp"
+        android:minWidth="175dp"
+        android:background="#f3e929"
+        android:textColor="#fff4f2"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_start_run"
+        android:id="@+id/btnStartRun"
+        android:textSize="48dp"
+        android:minWidth="175dp"
+        android:layout_alignTop="@+id/btnPauseRun"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#b4d471"
+        android:layout_alignBottom="@+id/btnPauseRun"
+        android:textColor="#fff4f2"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop_run"
+        android:id="@+id/btnStopRun"
+        android:textSize="48dp"
+        android:minWidth="175dp"
+        android:layout_alignTop="@+id/btnPauseRun"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#d22500"
+        android:layout_alignBottom="@+id/btnPauseRun"
+        android:textColor="#fff4f2"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/track_time"
+        android:layout_marginTop="47dp"
+        android:textSize="48dp"
+        android:layout_below="@+id/btnStartRun"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnPauseRun"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/track_distance"
+        android:textSize="48dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Here"
+        android:id="@+id/textView2"
+        android:textSize="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnStopRun"
+        android:layout_alignEnd="@+id/btnStopRun"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/trackDistance" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackTime"
+        android:textSize="48dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btnStopRun"
+        android:layout_alignStart="@+id/btnStopRun" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48dp"
+        android:text="0.96 m"
+        android:layout_below="@+id/trackTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/trackTime"
+        android:layout_alignStart="@+id/trackTime"
+        android:id="@+id/trackDistance" />
+</RelativeLayout>

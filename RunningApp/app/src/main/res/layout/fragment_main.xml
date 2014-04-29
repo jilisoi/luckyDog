@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.whitworth.app.MainActivity$PlaceholderFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_run"
+        android:id="@+id/btnRun"
+        android:textSize="48dp"
+        android:layout_marginBottom="77dp"
+        android:layout_above="@+id/btnResults"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp"
+        android:background="#99ccff"
+        android:textColor="#fffcf9"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_results"
+        android:id="@+id/btnResults"
+        android:textSize="48dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp"
+        android:background="#99ccff"
+        android:textColor="#fff9f8"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_settings"
+        android:id="@+id/btnSettings"
+        android:layout_marginTop="79dp"
+        android:textSize="48dp"
+        android:layout_below="@+id/btnResults"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp"
+        android:background="#99ccff"
+        android:textColor="#fff9f8"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="48dp" />
+</RelativeLayout>
